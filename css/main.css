@@ -1,0 +1,162 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  background-image: url(/images/pattern-bg.svg), url(/images/pattern-quotes.svg), url(/images/pattern-curve.svg);
+  background-position: top 24px center, center 370px, bottom left;
+  background-repeat: no-repeat;
+  background-size: 325px, 60px, 270px;
+  min-height: 100vh;
+  text-align: center;
+  max-width: 600px;
+  margin: 0 auto;
+  padding-bottom: 24px;
+}
+
+.img-container {
+  padding: 52px 60px 0 60px;
+  position: relative;
+}
+
+.person-img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+  -webkit-box-shadow: rgba(255, 255, 255, 0.1) 0px 1px 1px 0px inset, rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+          box-shadow: rgba(255, 255, 255, 0.1) 0px 1px 1px 0px inset, rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+}
+
+.para {
+  margin: 88px 35px 20px 35px;
+  color: #202046;
+  font-weight: 300;
+  font-size: 17px;
+  line-height: 25px;
+}
+
+.name {
+  color: #202046;
+}
+
+.occupation {
+  color: #babacf;
+}
+
+.btns {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: absolute;
+  bottom: -20px;
+  left: 50%;
+  -webkit-transform: translate(-50%);
+          transform: translate(-50%);
+}
+
+.btn {
+  background-color: white;
+  border: none;
+  height: 40px;
+  width: 40px;
+  outline: none;
+  cursor: pointer;
+}
+
+.btn i {
+  color: #babacf;
+  font-size: 15px;
+}
+
+.prev {
+  border-radius: 20px 0 0 20px;
+}
+
+.next {
+  border-radius: 0 20px 20px 0;
+}
+
+@media screen and (min-width: 600px) {
+  .para {
+    font-size: 22px;
+  }
+  .name,
+  .occupation {
+    font-size: 20px;
+  }
+}
+
+@media screen and (min-width: 1110px) {
+  body {
+    display: -ms-grid;
+    display: grid;
+    place-items: center;
+    max-width: 100%;
+    background-position: right 150px top 50px, left 260px top 200px, bottom left;
+    background-size: 695px, 120px, 600px;
+  }
+  article {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: row-reverse;
+            flex-direction: row-reverse;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 1110px;
+    position: relative;
+    height: auto;
+  }
+  .img-container {
+    position: absolute;
+    right: 0;
+    padding: 0;
+  }
+  .img-container .person-img {
+    max-width: 540px;
+  }
+  .btns {
+    bottom: -30px;
+    left: 100px;
+  }
+  .btns .btn {
+    width: 60px;
+    height: 60px;
+  }
+  .btns .btn i {
+    font-size: 20px;
+  }
+  .btns .prev {
+    border-radius: 30px 0 0 30px;
+  }
+  .btns .next {
+    border-radius: 0 30px 30px 0;
+  }
+  .info-container {
+    position: absolute;
+    left: 0;
+    width: 650px;
+    text-align: left;
+  }
+  .info-container .para {
+    margin: 0 0 50px 0;
+    font-size: 32px;
+    line-height: 42px;
+  }
+  .info-container .name,
+  .info-container .occupation {
+    display: inline;
+  }
+  .info-container .name {
+    margin-right: 10px;
+  }
+}
+/*# sourceMappingURL=main.css.map */
